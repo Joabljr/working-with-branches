@@ -1,0 +1,56 @@
+add-css-file
+  feature-add-player
+  feature-test-branch
+
+@Joabljr ➜ ~/.ssh/working-with-branches (add-css-file) $ git branch
+* add-css-file
+  feature-add-player
+  feature-test-branch
+  test-branch
+
+@Joabljr ➜ ~/.ssh/working-with-branches (add-css-file) $ git branch
+* add-css-file
+  feature-add-player
+  feature-test-branch
+  test-branch
+
+@Joabljr ➜ ~/.ssh/working-with-branches (add-css-file) $ git switch test-branch
+Switched to branch 'test-branch'
+
+@Joabljr ➜ ~/.ssh/working-with-branches (add-css-file) $ git switch remotes/origin/main
+fatal: a branch is expected, got remote branch 'origin/main'
+hint: If you want to detach HEAD at the commit, try again with the --detach option.
+@Joabljr ➜ ~/.ssh/working-with-branches (add-css-file) $ git switch feature-add-player
+Switched to branch 'feature-add-player'
+Your branch is up to date with 'origin/feature-add-player'.
+@Joabljr ➜ ~/.ssh/working-with-branches (feature-add-player) $ git status
+On branch feature-add-player
+Your branch is up to date with 'origin/feature-add-player'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        answers
+        answers.md
+        styles.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+It looks the same to me
+
+
+@Joabljr ➜ ~/.ssh/working-with-branches (add-css-file) $ git switch feature-add-player
+Switched to branch 'feature-add-player'
+Your branch is up to date with 'origin/feature-add-player'.
+
+@Joabljr ➜ ~/.ssh/working-with-branches (feature-add-player) $ git status
+On branch feature-add-player
+Your branch is up to date with 'origin/feature-add-player'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        answers
+        answers.md
+        styles.css
+
+nothing added to commit but untracked files present (use "git add" to track)
